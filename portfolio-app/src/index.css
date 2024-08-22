@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global styles for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.no-transition * {
+  transition: none !important;
+}
+
+/* Light Mode Background */
+html {
+  background-color: #f0f0f0;
+  color: #000000; 
+}
+
+body.light-page .app-content {
+  background-color: #ffffff; 
+}
+
+/* Dark Mode Background */
+html.dark {
+  background-color: #000000; 
+  color: #ffffff;
+}
+
+html.dark body, html.dark nav, html.dark section, html.dark div {
+  background-color: inherit; 
+  color: inherit; 
+}
+
+button.text-4xl {
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 4px 18px;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+nav {
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact-section {
+  border: none;
+}
