@@ -4,13 +4,13 @@
 
 /* Global body styles */
 body {
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #FAF9F6;
 }
 
 /* Global styles for all elements */
@@ -53,14 +53,122 @@ button.text-4xl {
 
 nav {
   border-radius: 15px;
-  margin-top: 10px;
   border: 1px solid lightgray;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 100px;
-  max-width: 800px;
-  width: 100%;
+  margin-bottom: 30px;
+}
+nav:hover {
+  color: #0ABAB5;
 }
 
 .contact-section {
   border: none;
 }
+
+.projects-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 22px; /* Add padding if needed */
+  margin-top: 20px;
+}
+
+
+.projects-grid {
+  max-width: 1200px;
+  width: 220%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 100px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+
+
+.project-card {
+  background-color: ;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  @apply w-64; /* Tailwind width utility */
+  margin: 0 auto; /* Negative margin to overlap background */
+}
+
+
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure consistent sizing for project images */
+.project-image {
+  @apply w-full h-48 object-cover;
+  border-radius: 4px;
+}
+
+.project-title {
+  font-size: 1rem; /* Increase the font size slightly */
+  font-weight: 700;  /* Make the title bold */
+  color: #555555;       /* Darker color for better contrast */
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+.project-description {
+  font-size: 0.87rem;   /* Keep the description text slightly smaller */
+  color: #666;       /* Subtle color for the description */
+  margin: 8px 0;
+  text-align: left; /* Center the text */
+}
+
+.project-link {
+  display: inline-block; /* Keep the button inline */
+  text-align: center;    /* Center the button text */
+  margin-left: 50px;     /* Center the button itself */
+  padding: 6px 12px;     /* Smaller padding for a more compact button */
+  background-color: #80daeb; /* Tiffany light blue */
+  color: #fff;           /* White text */
+  border-radius: 25px;   /* Rounder corners for the button */
+  text-decoration: none;
+  font-size: 0.85rem;    /* Slightly smaller text */
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.project-link:hover {
+  background-color: #778899; /* Darker shade on hover */
+}
+
+.app-content {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#about {
+  margin-bottom: 0; /* Avoid pushing the Projects section */
+}
+
+#about {
+  margin-left: 60px; /* Adjust as needed */
+  margin-right: auto; /* Ensure it aligns to the left side */
+  margin-top: 90px; /* Add top margin if needed */
+  background-color: inherit; /* Use the same background color as the navbar */
+  border-radius: 15px; /* Optional: Add border radius if you want rounded corners */
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #353839;
+}
+
+

@@ -26,9 +26,6 @@ const Main = () => {
   return (
     <StrictMode>
       <App darkMode={darkMode} setDarkMode={setDarkMode} />
-      <section id="projects" className="w-full flex justify-center">
-        <Projects />
-      </section>
     </StrictMode>
   );
 }

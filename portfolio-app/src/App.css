@@ -20,15 +20,25 @@ html.dark body, html.dark nav, html.dark section, html.dark div {
   background-color: transparent;
 }
 
-#about {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 4rem; 
-}
+
 
 .contact-section {
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
+#about {
+  margin-left: 20px; /* Adjust as needed */
+  margin-right: auto; /* Ensure it aligns to the left side */
+  margin-top: 20px; /* Add top margin if needed */
+  background-color: inherit; /* Use the same background color as the navbar */
+  border-radius: 15px; /* Optional: Add border radius if you want rounded corners */
+  padding: 20px;
+  background-color: #f0f0f0; /* Optional: Add padding if needed */
+}
+
+
+
+
 
 
 
