@@ -13,7 +13,6 @@ body {
   background-color: #FAF9F6;
 }
 
-/* Global styles for all elements */
 * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -34,13 +33,54 @@ body.light-page .app-content {
 
 /* Dark Mode Background */
 html.dark {
-  background-color: #000000; 
+  background-color: #080808; 
   color: #ffffff;
 }
 
 html.dark body, html.dark nav, html.dark section, html.dark div {
   background-color: inherit; 
   color: inherit; 
+}
+
+html.dark nav {
+  background-color: #242124;
+}
+
+
+html.dark nav button {
+  color: #a9a9a9;
+}
+
+html.dark nav button:hover {
+  color: #e5e4e2;
+}
+
+html.dark .project-card {
+  background-color: #242124;
+  border-color: #555555;
+}
+
+html.dark .project-title {
+  color: #e0e0e0;
+}
+
+html.dark .project-description {
+  color: #c0c0c0;
+}
+
+html.dark .project-link {
+  background-color: #505050;
+}
+
+html.dark .project-link:hover {
+  background-color: #777777;
+}
+
+html.dark nav,
+html.dark section,
+html.dark div,
+html.dark .project-card {
+  border: none;
 }
 
 button.text-4xl {
@@ -55,92 +95,85 @@ nav {
   border-radius: 15px;
   border: 1px solid lightgray;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-nav:hover {
-  color: #0ABAB5;
+  margin-bottom: 20px;
 }
 
 .contact-section {
   border: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .projects-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 22px; /* Add padding if needed */
-  margin-top: 20px;
+  padding: 22px;
 }
 
 
 .projects-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 220%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 100px;
   margin: 20px;
-  margin-top: 40px;
+  margin-top: 16px;
 }
 
-
-
 .project-card {
-  background-color: ;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  @apply w-64; /* Tailwind width utility */
-  margin: 0 auto; /* Negative margin to overlap background */
+  @apply w-60; 
+  margin: 0 auto; 
+  height: 320px;
+  background-color: white;
 }
-
-
 
 .project-card:hover {
   transform: scale(1.05);
 }
 
-/* Ensure consistent sizing for project images */
 .project-image {
-  @apply w-full h-48 object-cover;
+  @apply w-full h-40 object-cover;
   border-radius: 4px;
 }
 
 .project-title {
-  font-size: 1rem; /* Increase the font size slightly */
-  font-weight: 700;  /* Make the title bold */
-  color: #555555;       /* Darker color for better contrast */
-  margin: 10px 0;
+  font-size: 1rem; 
+  font-weight: 700; 
+  color: #555555;
+  margin: 2px 0;
   text-align: center;
 }
 
-
 .project-description {
-  font-size: 0.87rem;   /* Keep the description text slightly smaller */
-  color: #666;       /* Subtle color for the description */
-  margin: 8px 0;
-  text-align: left; /* Center the text */
+  font-size: 0.80rem; 
+  color: #666;
+  margin: 6px 0;
+  text-align: left; 
 }
 
 .project-link {
-  display: inline-block; /* Keep the button inline */
-  text-align: center;    /* Center the button text */
-  margin-left: 50px;     /* Center the button itself */
-  padding: 6px 12px;     /* Smaller padding for a more compact button */
-  background-color: #80daeb; /* Tiffany light blue */
-  color: #fff;           /* White text */
-  border-radius: 25px;   /* Rounder corners for the button */
+  display: inline-block;
+  text-align: center;    
+  margin-left: 50px;    
+  padding: 4px 8px;     
+  background-color: #80daeb; 
+  color: #fff;          
+  border-radius: 25px;   
   text-decoration: none;
-  font-size: 0.85rem;    /* Slightly smaller text */
+  font-size: 0.85rem;
   transition: background-color 0.3s ease;
   font-weight: 500;
 }
 
 .project-link:hover {
-  background-color: #778899; /* Darker shade on hover */
+  background-color: #778899;
 }
 
 .app-content {
@@ -153,22 +186,101 @@ nav:hover {
 }
 
 #about {
-  margin-bottom: 0; /* Avoid pushing the Projects section */
+  margin-bottom: 0;
 }
 
 #about {
-  margin-left: 60px; /* Adjust as needed */
-  margin-right: auto; /* Ensure it aligns to the left side */
-  margin-top: 90px; /* Add top margin if needed */
-  background-color: inherit; /* Use the same background color as the navbar */
-  border-radius: 15px; /* Optional: Add border radius if you want rounded corners */
+  margin-left: 60px; 
+  margin-right: auto; 
+  margin-top: 50px;
+  background-color: inherit;
+  border-radius: 15px;
   padding: 20px;
 }
 
 h1 {
   margin-top: 10px;
-  margin-bottom: 10px;
-  color: #353839;
+  margin-bottom: 5px;
+  color: #080808;
 }
 
+html.dark h1 {
+  color: #ffffff; 
+}
 
+html.dark #about h2 {
+  color: #a9a9a9;
+}
+
+html.dark .contact-section svg {
+  fill: #a9a9a9;
+}
+
+.github-icon, .linkedin-icon {
+  transform: perspective(600px) translateZ(0);
+  transition: transform 0.3s ease-in-out;
+  color: #80daeb;
+}
+
+.github-icon:hover, .linkedin-icon:hover {
+  transform: perspective(600px) translateZ(30px) scale(1.15);
+}
+
+h2 {
+  color: #353839;
+  margin-bottom: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.h-3 h4 {
+  height: 75%;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-list {
+  list-style-type: none; 
+  padding-left: 0; 
+}
+
+.custom-list li::before {
+  content: "•";
+  color: #00bfa6;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.custom-list li {
+  margin-bottom: 0.75rem; 
+}
+
+.text-gray-600.dark\\:text-gray-400 {
+  color: #4b5563; 
+  color: #9ca3af;
+}

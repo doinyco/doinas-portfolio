@@ -19,7 +19,7 @@ const projects = [
     },
     {
         title: 'My Next Gym',
-        description: 'A web application that helps users find gyms based on a ',
+        description: 'A web application that helps users find gyms based on a location.',
         link: 'https://www.youtube.com/watch?v=VFmsh5oNHYA',
         image: 'https://media1.popsugar-assets.com/files/thumbor/bn4M5T6eZMJdDK7rl9m2zdrPr0o=/fit-in/1584x1056/top/filters:format_auto():upscale()/2018/11/26/126/n/1922729/c5a3c1018831a0bb_GettyImages-907504500.jpg'
     },
@@ -43,13 +43,13 @@ const projects = [
     },
     {
         title: 'Task List API',
-        description: 'CRUD API for a task list',
+        description: 'CRUD API for a task list.',
         link: 'https://github.com/doinyco/task-list-api?',
         image: 'https://images.inc.com/uploaded_files/image/1920x1080/getty_638884198_366705.jpg'
     },
     {
         title: 'JS Adagram',
-        description: 'A JavaScript version of the popular word game Anagram',
+        description: 'A JavaScript version of the popular word game Anagram.',
         link: 'https://github.com/doinyco/js-adagrams?',
         image: 'https://i.etsystatic.com/5376917/r/il/47afaa/5798160692/il_fullxfull.5798160692_n9k0.jpg'
     }

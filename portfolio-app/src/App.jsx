@@ -11,6 +11,12 @@ function App({ darkMode, setDarkMode }) {
   const handleExperienceClick = () => {
     setExperienceVisible(true);
     setActiveSection('experience');
+    document.body.classList.add('dimmed');
+  };
+
+  const closeExperience = () => {
+    setExperienceVisible(false);
+    document.body.classList.remove('dimmed');
   };
 
   const handleNavClick = (section) => {
@@ -20,28 +26,28 @@ function App({ darkMode, setDarkMode }) {
 
   return (
     <div className="app-content min-h-screen flex flex-col">
-      <nav className="w-2/4 max-w-2xl mx-auto flex justify-center space-x-4 py-2 border-b-2 border-gray-300 rounded-3xl">
+      <nav className="max-w-1xl mx-auto flex justify-center space-x-3 py-2 border-b-2 border-gray-300 rounded-3xl" style={{ width: '36.5%' }}>
         <div className="space-x-8">
           <button
-            className={`text-lg font-semibold ${activeSection === 'about' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#808080]`}
+            className={`text-sm font-semibold ${activeSection === 'about' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#778ba5]`}
             onClick={() => handleNavClick('about')}
           >
             About
           </button>
           <button
-            className={`text-lg font-semibold ${activeSection === 'contact' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
+            className={`text-sm font-semibold ${activeSection === 'contact' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
             onClick={() => handleNavClick('contact')}
           >
             Contact Me
           </button>
           <button
-            className={`text-lg font-semibold ${activeSection === 'projects' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
+            className={`text-sm font-semibold ${activeSection === 'projects' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
             onClick={() => handleNavClick('projects')}
           >
             Projects
           </button>
           <button
-            className={`text-lg font-semibold ${activeSection === 'experience' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
+            className={`text-sm font-semibold ${activeSection === 'experience' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
             onClick={handleExperienceClick}
           >
             Experience
@@ -50,27 +56,28 @@ function App({ darkMode, setDarkMode }) {
       </nav>
       <section id="toggle" className="absolute top-2 right-24 mt-2.5">
         <button
-          className="text-4xl border border-light-gray p-2 rounded-md shadow-md"
+          className="w-12 h-11 text-xl border border-light-gray rounded-full shadow-md flex items-center justify-center"
           onClick={() => setDarkMode(prevMode => !prevMode)}
+          style={{ fontSize: '1.6rem', color: darkMode ? 'inherit' : '#888' }}
         >
           {darkMode ? '☽' : '☼'}
         </button>
       </section>
       <section id="about" className="flex flex-col items-center my-12">
         <div className="flex flex-col items-start">
-          <img 
+          <img
             src={profileImage}
             alt="Profile"
             className="w-24 h-24 rounded-full shadow-lg"
           />
-          <h1 className="text-4xl font-bold">Software Engineer</h1>
-          <h2 style={{ fontSize: '1.2rem', color: '#696969' }}>I am Doina, a software engineer based in Seattle area.</h2>
+          <h1 style={{ fontSize: '2.6rem' }} className="font-bold">Software Engineer</h1>
+          <h2 style={{ fontSize: '1.05rem' }}>I am Doina, a software engineer based in Seattle area.</h2>
           <div id="contact" className="mt-6 w-full">
             <ContactMe />
           </div>
         </div>
       </section>
-      {isExperienceVisible && <Experience onClose={() => setExperienceVisible(false)} />}
+      {isExperienceVisible && <Experience onClose={closeExperience} />}
       <section id="projects">
         <Projects />
       </section>
@@ -79,4 +86,3 @@ function App({ darkMode, setDarkMode }) {
 }
 
 export default App;
-
