@@ -31,9 +31,9 @@ const Experience = ({ onClose }) => {
                     <h4 className="text-sm text-gray-600 dark:text-gray-400 italic mb-2">05/2024 - 08/2024</h4>
                     <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">Software Engineering Student</h3>
                     <ul className="list-disc list-inside mt-2 text-gray-700 dark:text-gray-300">
-                        <li>Advanced coursework and projects in software development.</li>
-                        <li>Developing AI-integrated applications and machine learning systems.</li>
-                        <li><strong>Tech stack:</strong> Python, JavaScript, Flask, React, PostgreSQL, OpenAI API.</li>
+                        <li>Completed advanced coursework in computer science and developed AI-powered applications.</li>
+                        <li>Developed the "Plan My Trip" app using Leaflet.js and the OpenAI API.</li>
+                        <li><strong>Tech stack:</strong> Python, Flask, React, PostgreSQL, OpenAI API, Leaflet.js.</li>
                     </ul>
                 </div>
 

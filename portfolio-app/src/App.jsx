@@ -29,25 +29,25 @@ function App({ darkMode, setDarkMode }) {
       <nav className="max-w-1xl mx-auto flex justify-center space-x-3 py-2 border-b-2 border-gray-300 rounded-3xl" style={{ width: '36.5%' }}>
         <div className="space-x-8">
           <button
-            className={`text-sm font-semibold ${activeSection === 'about' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#778ba5]`}
+            className={`text-sm font-semibold ${activeSection === 'about' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#77b5fe]`}
             onClick={() => handleNavClick('about')}
           >
             About
           </button>
           <button
-            className={`text-sm font-semibold ${activeSection === 'contact' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
+            className={`text-sm font-semibold ${activeSection === 'contact' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#77b5fe]`}
             onClick={() => handleNavClick('contact')}
           >
             Contact Me
           </button>
           <button
-            className={`text-sm font-semibold ${activeSection === 'projects' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
+            className={`text-sm font-semibold ${activeSection === 'projects' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#77b5fe]`}
             onClick={() => handleNavClick('projects')}
           >
             Projects
           </button>
           <button
-            className={`text-sm font-semibold ${activeSection === 'experience' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#696969]`}
+            className={`text-sm font-semibold ${activeSection === 'experience' ? 'text-[#80daeb]' : 'text-[#778899]'} hover:text-[#77b5fe]`}
             onClick={handleExperienceClick}
           >
             Experience
@@ -71,7 +71,12 @@ function App({ darkMode, setDarkMode }) {
             className="w-24 h-24 rounded-full shadow-lg"
           />
           <h1 style={{ fontSize: '2.6rem' }} className="font-bold">Software Engineer</h1>
-          <h2 style={{ fontSize: '1.05rem' }}>I am Doina, a software engineer based in Seattle area.</h2>
+          <h2 style={{ fontSize: '1.0rem', maxWidth: '800px' }}>
+            I am Doina, a software engineer based in the Seattle area, specializing in full-stack development and thriving on transforming ideas into functional, well-designed applications. 
+            <span style={{ marginLeft: '5px' }}>
+              Let's connect! <i className="fas fa-link"></i>
+            </span>
+          </h2>
           <div id="contact" className="mt-6 w-full">
             <ContactMe />
           </div>

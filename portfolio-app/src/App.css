@@ -6,10 +6,26 @@
   transition: none !important;
 }
 
+
+
+.contact-section {
+  margin-top: 30px;
+}
+
 html {
   background-color: #ffffff;
 }
 
-.contact-section {
-  margin-top: 30px;
+/* Dark mode styles */
+html.dark-mode {
+  background-color: #f4f4f4; /* Brighter background for dark mode */
+}
+
+/* Experience overlay styles */
+.experience-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+}
+
+.experience-content {
+  background-color: #f4f4f4; /* Brighter background for Experience content */
 }
