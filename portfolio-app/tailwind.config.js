@@ -18,6 +18,7 @@ export default {
       colors: {
         "bright-green": "#BADA55",
         "light-gray": "#d7dde4",
+        'custom-gray': '#bfc1c2',
       },
       fontSize: {
         "12xl": "14rem",

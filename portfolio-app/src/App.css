@@ -18,14 +18,14 @@ html {
 
 /* Dark mode styles */
 html.dark-mode {
-  background-color: #f4f4f4; /* Brighter background for dark mode */
+  background-color: #f4f4f4;
 }
 
 /* Experience overlay styles */
 .experience-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .experience-content {
-  background-color: #f4f4f4; /* Brighter background for Experience content */
+  background-color: #f4f4f4;
 }

@@ -1,8 +1,11 @@
+import React, { useState, useEffect } from 'react';
 
-const Experience = ({ onClose }) => {
+const Experience = ({ onClose, darkMode }) => {
+    const overlayColor = darkMode ? 'rgba(0, 0, 0, 0.7)' : 'rgba(0, 0, 0, 0.5)';
+
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="relative bg-white dark:bg-gray-800 p-6 max-w-3xl mx-auto rounded-lg shadow-lg overflow-y-auto h-3/4">
+        <div className="fixed inset-0 flex items-center justify-center z-50" style={{ backgroundColor: overlayColor }} >
+            <div className="relative bg-white dark:bg-[#242124] p-6 max-w-3xl mx-auto rounded-lg shadow-lg overflow-y-auto h-3/4">
                 <button
                     className="absolute top-4 right-4 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 text-2xl font-bold"
                     onClick={onClose}
@@ -32,7 +35,7 @@ const Experience = ({ onClose }) => {
                     <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">Software Engineering Student</h3>
                     <ul className="list-disc list-inside mt-2 text-gray-700 dark:text-gray-300">
                         <li>Completed advanced coursework in computer science and developed AI-powered applications.</li>
-                        <li>Developed the "Plan My Trip" app using Leaflet.js and the OpenAI API.</li>
+                        <li>Developed "Plan My Trip" app using Leaflet.js and the OpenAI API.</li>
                         <li><strong>Tech stack:</strong> Python, Flask, React, PostgreSQL, OpenAI API, Leaflet.js.</li>
                     </ul>
                 </div>
