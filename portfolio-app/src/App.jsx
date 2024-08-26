@@ -72,7 +72,7 @@ function App({ darkMode, setDarkMode }) {
           />
           <h1 style={{ fontSize: '2.6rem' }} className="font-bold">Software Engineer</h1>
           <h2 style={{ fontSize: '1.0rem', maxWidth: '800px' }}>
-            I am Doina, a software engineer based in the Seattle area, specializing in full-stack development and thriving on transforming ideas into functional, well-designed applications. 
+            I am Doina, a software engineer based in the Seattle area, specializing in full-stack web development and thriving on transforming ideas into functional, well-designed applications. 
             <span style={{ marginLeft: '5px' }}>
               Let's connect! <i className="fas fa-link"></i>
             </span>
