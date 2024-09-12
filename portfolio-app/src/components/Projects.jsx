@@ -15,7 +15,7 @@ const projects = [
         title: 'Chatbot-app',
         description: 'A web-based chat interface that interacts with the OpenAI GPT-3.5 model to generate responses to user messages.',
         link: 'https://www.youtube.com/watch?v=GIxmI2cO_YU',
-        image: 'https://www.247.ai/sites/default/files/styles/wx550/public/image/content/hero_banner/all-about-ai-powered-chatbots-banner.jpg.webp'
+        image: 'https://t3.ftcdn.net/jpg/03/23/83/00/360_F_323830067_Qd0gNLxdF4bu7PfsPpkJtVr0dBtnGKpX.jpg'
     },
     {
         title: 'My Next Gym',
