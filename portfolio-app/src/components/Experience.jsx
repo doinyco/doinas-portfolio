@@ -16,7 +16,7 @@ const Experience = ({ onClose, darkMode }) => {
                 <div className="mb-6 border-b border-gray-300 dark:border-gray-700 pb-4">
                     <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">Amazon</h2>
                     <h4 className="text-sm text-gray-600 dark:text-gray-400">08/2022 - 01/2023</h4>
-                    <h3 className="text-lg font-medium mt-2">Software Engineering Apprentice</h3>
+                    <h3 className="text-lg font-medium mt-2">Software Engineering Intern</h3>
                     <ul className="custom-list mt-2 text-gray-700 dark:text-gray-300">
                         <li>Contributed to causal machine learning systems for financial forecasting using Spark on AWS.</li>
                         <li>Migrated features from Apache Pig to Scala Spark, enhancing system quality.</li>
