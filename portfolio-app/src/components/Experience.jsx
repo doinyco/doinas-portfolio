@@ -18,13 +18,10 @@ const Experience = ({ onClose, darkMode }) => {
                         <h4 className="text-sm text-gray-600 dark:text-gray-400">08/2024 - 01/2025</h4>
                         <h3 className="text-lg font-medium mt-2">Software Engineering Intern</h3>
                         <ul className="custom-list mt-2 text-gray-700 dark:text-gray-300">
-                            <li>Expanded the Workspaces' internal debugging tool interface, to export diagnosing information and ease investigation
-                                and troubleshooting of the workspaces state. Added a tab to the UI layer (Typescript) and extracted the debug info
-                                from C++ backend using mojom interface.</li>
-                            <li>Investigated and fixed multiple Edge-specific bugs within the Workspaces interface, such as inconsistencies between
-                            user settings, internal state, and UI display leading to a better experience for Edge browser users.</li>
+                            <li>Expanded the Workspaces' internal debugging tool interface, to export diagnosing information and ease investigation and troubleshooting of the workspaces state. Added a tab to the UI layer (Typescript) and extracted the debug info from C++ backend using mojom interface.</li>
+                            <li>Investigated and fixed multiple Edge-specific bugs within the Workspaces interface, such as inconsistencies between user settings, internal state, and UI display leading to a better experience for Edge browser users.</li>
                             <li>Collaborated with team members during hackathon week, on adding UI components for sorting workspaces feature.</li>
-                            <li><strong>Tech stack:</strong>C++, Mojom, TypeScript, CSS.</li>
+                            <li><strong>Tech stack:</strong> C++, Mojom, TypeScript, CSS.</li>
                         </ul>
                     <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">Amazon</h2>
                     <h4 className="text-sm text-gray-600 dark:text-gray-400">08/2022 - 01/2023</h4>
